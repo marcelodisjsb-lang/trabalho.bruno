@@ -1,32 +1,69 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro chat</title>
+
+    <title>Mini Chat IA</title>
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
+
     <main class="chat">
-        <header>
-            <h1>Meu primeiro chat</h1>
-            <p>Conversa local com resposta automática fixa.</p>
+
+       
+        <header class="chat-header">
+
+            <div class="bot-icon">🤖</div>
+
+            <div class="header-info">
+                <h1>Mini Chat IA</h1>
+                <p><span class="status"></span> Bot online</p>
+            </div>
+
         </header>
 
-        <section id="mensagens">
-            <p class="bot">Bot: Olá! Envie uma mensagem para testar.</p>
+       
+        <section id="mensagens" aria-live="polite">
+
+            <p class="bot">
+                Bot: Olá! Sou seu assistente virtual.
+                Pode perguntar qualquer coisa!
+            </p>
+
         </section>
 
+       
         <form id="formulario">
-            <label for="texto">Sua mensagem</label>
 
-            <div class="entrada">
-                <input id="texto" type="text" placeholder="Digite aqui..." required>
-                <button type="submit">Enviar</button>
+            <div class="input-area">
+
+                <input
+                    id="texto"
+                    type="text"
+                    placeholder="Digite sua mensagem..."
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit" aria-label="Enviar mensagem">
+                    ➤
+                </button>
+
             </div>
+
+            <p class="footer-text">
+                Desenvolvido com HTML, CSS e JavaScript
+            </p>
+
         </form>
+
     </main>
+
 </body>
 </html>
